@@ -29,6 +29,8 @@ if (program.port) {
 
 const tello = new Tello(params)
 
+tello.init()
+
 tello.sendCommand(`${args}`, (client) => {
   client.close()
 })
