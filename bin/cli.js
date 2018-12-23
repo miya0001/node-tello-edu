@@ -3,7 +3,6 @@
 'use strict'
 
 const program = require('commander');
-const Tello = require('..');
 const pkg = require('../package.json')
 
 program
