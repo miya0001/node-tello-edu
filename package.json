@@ -1,0 +1,21 @@
+{
+  "name": "tello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/tello.js",
+  "bin": "bin/cli.js",
+  "scripts": {
+    "test": "eslint lib/tello.js && eslint bin/cli.js && mocha --exit"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "shell-escape": "^0.2.0"
+  }
+}
