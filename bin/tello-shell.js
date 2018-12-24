@@ -39,25 +39,20 @@ app.configure(() => {
 
 app.cmd('takeoff', 'Auto takeoff.', (req, res, next) => {
   tello.takeoff();
-  res.prompt()
+  res.prompt();
 });
 
 app.cmd('land', 'Auto landing.', (req, res, next) => {
   tello.land();
-  res.prompt()
+  res.prompt();
 });
 
 app.cmd('cw :x', 'Rotate “x” degrees clockwise.', (req, res, next) => {
-  tello.command(`cw ${parseInt(req.params.x)}`);
-  res.prompt()
+  tello.sendCommand(`cw ${parseInt(req.params.x)}`);
+  res.prompt();
 });
 
 app.cmd('ccw :x', 'Rotate “x” degrees counter-clockwise.', (req, res, next) => {
-  tello.command(`cw ${parseInt(req.params.x)}`);
-  res.prompt()
-});
-
-app.cmd('battery', 'Rotate “x” degrees counter-clockwise.', (req, res, next) => {
-  tello.command('battery?')
-  res.prompt()
+  tello.sendCommand(`cw ${parseInt(req.params.x)}`);
+  res.prompt();
 });
