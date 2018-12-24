@@ -4,11 +4,10 @@ const program = require('commander');
 const shellescape = require('shell-escape');
 const Tello = require('..');
 const shell = require('shell')
-const app = new shell( { chdir: __dirname } )
 
 program
-  .option('-i, --ip <ip-address>')
-  .option('-p, --port <port>')
+  .option('-i, --ip <ip-address>', 'IP address.')
+  .option('-p, --port <port>', 'Port.')
   .parse(process.argv);
 
 const params = {}
@@ -23,6 +22,12 @@ if (program.port) {
 
 const tello = new Tello(params)
 tello.init()
+
+//delete process.argv
+
+const app = new shell({
+  isShell: true,
+})
 
 app.configure(() => {
   app.use(shell.completer({
