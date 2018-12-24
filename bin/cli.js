@@ -8,6 +8,6 @@ const pkg = require('../package.json')
 program
   .version(pkg.version)
   .command('ap <ssid> <password> [options]', 'Set the Tello to station mode, and connect to the access point with ssid and password.')
-  .command('command <command> [options]', 'Launch UDP server to recieve Tello state on 0.0.0.0:8890')
+  .command('shell', 'Launch UDP server to recieve Tello state on 0.0.0.0:8890')
   .command('state', 'Launch UDP server to recieve Tello state on 0.0.0.0:8890')
   .parse(process.argv)
