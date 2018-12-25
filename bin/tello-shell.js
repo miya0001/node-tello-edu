@@ -21,7 +21,6 @@ if (program.port) {
 }
 
 const tello = new Tello(params)
-tello.init()
 
 //delete process.argv
 
