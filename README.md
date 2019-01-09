@@ -32,6 +32,8 @@ setTimeout(() => {
 }, 20000);
 ```
 
+You can see command to control tello in SDK documentation.
+
 https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf
 
 ## CLI interface
