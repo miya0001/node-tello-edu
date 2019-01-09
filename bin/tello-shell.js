@@ -41,6 +41,10 @@ app.configure(() => {
   }));
 });
 
+setInterval(() => {
+  tello.sendCommand(`command`);
+}, 10000);
+
 app.cmd('takeoff', 'Auto takeoff.', (req, res, next) => {
   tello.takeoff();
   res.prompt();
@@ -57,6 +61,6 @@ app.cmd('cw :x', 'Rotate “x” degrees clockwise.', (req, res, next) => {
 });
 
 app.cmd('ccw :x', 'Rotate “x” degrees counter-clockwise.', (req, res, next) => {
-  tello.sendCommand(`cw ${parseInt(req.params.x)}`);
+  tello.sendCommand(`ccw ${parseInt(req.params.x)}`);
   res.prompt();
 });
