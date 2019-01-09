@@ -1,13 +1,13 @@
 # node-tello-edu
 
-A client library for Tello EDU.
+An unofficial client library for Tello EDU.
 
 https://www.ryzerobotics.com/tello-edu
 
 ## How to install
 
 ```
-$ npm install https://github.com/miya0001/node-tello-edu --save
+$ npm install node-tello-edu --save
 ```
 
 ## Example
