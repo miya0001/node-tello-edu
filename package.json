@@ -1,9 +1,11 @@
 {
-  "name": "tello",
+  "name": "node-tello-edu",
   "version": "1.0.0",
   "description": "",
   "main": "lib/tello.js",
-  "bin": "bin/cli.js",
+  "bin": {
+    "tello": "bin/cli.js"
+  },
   "scripts": {
     "test": "eslint lib/tello.js && eslint bin/cli.js && mocha --exit"
   },
