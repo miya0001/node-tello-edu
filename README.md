@@ -13,7 +13,7 @@ $ npm install node-tello-edu --save
 ## Example
 
 ```
-const tello = require('tello')
+const tello = require('node-tello-edu')
 
 const drone = new tello({
   ip: "192.168.43.208",
